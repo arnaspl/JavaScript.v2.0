@@ -45,15 +45,62 @@
 
 // console.log(person.getSummary());
 
-var personInfo = {
-    firstName: 'Edvardas',
-    lastName: 'Salnis',
-    age: 18,
-    hobbies: ['art', 'music'],
-    getSummary() {
-        return `Hello, my name is ${this.firstName} ${this.lastName} I'm ${this.age} old and I like ${this.hobbies[0]}, ${this.hobbies[1]}`
-    }
-};
+// Task1
 
-console.log(personInfo);
-console.log(personInfo.getSummary());
+// var personInfo = {
+//     firstName: 'Edvardas',
+//     lastName: 'Salnis',
+//     age: 18,
+//     hobbies: ['art', 'music'],
+//     getSummary() {
+//         return `Hello, my name is ${this.firstName} ${this.lastName} I'm ${this.age} old and I like ${this.hobbies[0]}, ${this.hobbies[1]}`
+//     }
+// }
+
+// console.log(personInfo);
+// console.log(personInfo.getSummary());
+
+// function add (x, y) {
+//     return x + y;
+// }
+
+// or 
+// add = (x, y) => {
+//     return x + y;
+// }
+
+// ES5
+// add = (x, y) => x + y
+
+// console.log(add(2, 2));
+
+// FOR LOOP
+
+// for (let i = 0; i < 10; i++) {
+//     console.log(i);
+// }
+
+// While loop
+
+// let i = 0;
+// while (i < 10) {
+//     console.log(i)
+//     i++
+    
+// }
+
+// forEach()
+
+const tasks = [
+    {id: 1, name: 'Task1'},
+    {id: 2, name: 'Task2'},
+    {id: 3, name: 'Task3'}
+];
+
+// ES5
+// tasks.forEach(function(task) {
+//     console.log(task);
+// })
+
+// ES6
+tasks.forEach(task => console.log(task));
